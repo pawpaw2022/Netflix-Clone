@@ -14,4 +14,3 @@ function Navbar() {
 
 export default Navbar;
 
-// 'flex items-center justify-between p-4 z-[100] w-full absolute'
