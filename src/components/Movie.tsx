@@ -1,0 +1,35 @@
+import React, { useState } from 'react';
+import { IoAddCircleOutline, IoCheckmarkCircleSharp } from "react-icons/io5";
+
+interface IMovie{
+    item: any;
+    key: number;
+}
+
+function Movie({item} : IMovie ) {
+
+    const [like, setLike] = useState<boolean>(false);
+
+    
+
+    return (
+        <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2">
+            <img
+                className='w-full h-auto block' 
+                src={item ? `https://image.tmdb.org/t/p/w500/${item.backdrop_path}` : ""}
+                alt={item?.title} />
+            <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
+                <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center">
+                    {item?.title}
+                </p>
+                <p>
+                    {like ? 
+                    <IoCheckmarkCircleSharp className='absolute top-4 left-4' size='30px' /> : 
+                    <IoAddCircleOutline className='absolute top-4 left-4 text-m' size='30px'/>}
+                </p>
+            </div>
+        </div>
+    );
+}
+
+export default Movie;
