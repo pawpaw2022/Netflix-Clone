@@ -37,7 +37,7 @@ function AuthProvider({ children } : any) {
         user, 
         signup,
         login,
-        signOut,
+        logout,
     }
 
     return (
