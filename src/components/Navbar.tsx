@@ -16,7 +16,7 @@ function Navbar() {
             setError('');
             
             await logout();
-            navigate('/');
+            window.location.reload();
         } catch (e:any) {
             setError(e.message);
         }
