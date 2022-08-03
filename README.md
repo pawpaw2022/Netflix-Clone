@@ -1,4 +1,7 @@
 # Netflix Clone 
+
+<img style="https://github.com/Paul-l-sining/Netflix-Clone/blob/main/src/showcase/showcase-netflix.png?raw=true" alt="homepage-showcase">
+
 ---
 ## Project Description 
 
@@ -27,9 +30,9 @@ Techinques Applied:
 
 ---
 
-##Project Deployment Website
+## Project Deployment Website
 
-##[Netflix Clone](https://netflix-clone-4f0fa.firebaseapp.com/)
+## [Netflix Clone](https://netflix-clone-4f0fa.firebaseapp.com/)
 
 ---
 
