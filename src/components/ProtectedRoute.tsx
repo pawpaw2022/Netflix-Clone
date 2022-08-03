@@ -2,7 +2,7 @@ import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 
-function ProtectedRoute({ component } : any) {
+function ProtectedRoute({ component: Component } : any) {
     
     const { user } = useAuth();
 
@@ -10,7 +10,7 @@ function ProtectedRoute({ component } : any) {
     if (!user) {
         return <Navigate to='/' />;
     }else {
-        return component;
+        return <Component />;
     }
 
 }

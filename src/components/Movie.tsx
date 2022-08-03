@@ -22,10 +22,10 @@ function Movie({item} : IMovie ) {
 
     useEffect(()=>{
         onSnapshot(doc(db, 'users', `${user?.email}`), (doc) => {
-            const savedMovies = (doc.data()?.savedMovies); 
+            const savedMovies:any[] = (doc.data()?.savedMovies); 
             
             if (!savedMovies) return 
-            
+
             for(let movie of savedMovies){
                 if (movie.id === item.id){
                     setLike(true)
