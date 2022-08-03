@@ -21,7 +21,7 @@ function SavedMovies() {
 
 
     const movieId = doc(db, 'users', `${user?.email}`);
-    const handleDelete = async (id: number) => {
+    const handleDelete = async (id: number) => { 
 
         try {
             setError('')
