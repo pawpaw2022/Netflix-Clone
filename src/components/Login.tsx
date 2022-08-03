@@ -23,9 +23,7 @@ function Login() {
             await login(email, password);
             navigate('/');
         } catch (e:any) {
-            setError(e.message);
-            console.log(e.message);
-            
+            setError(e.message);            
         }
         setLoading(false);
     }
